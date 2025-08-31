@@ -288,18 +288,25 @@ p {
 
 @media (max-width: 950px) {
   .infoContainer {
-    flex-direction: column; 
+    flex-direction: column;   /* Stack items vertically */
     text-align: center;
-  }
-
-  .devPic {
-    display: block;
-    margin-top: 25px;
+    min-height: 100vh;        /* Full screen height */
+    justify-content: space-between;
   }
 
   .devInfo {
     align-items: center;
     text-align: center;
+  }
+
+  .typing {
+    width: 100%;            /* Full width on small screens */
+    white-space: normal;    /* Allow wrapping */
+    font-size: 16px;        /* Adjust for mobile */
+    text-align: center;     /* Center text */
+    margin: 15px auto;      /* Add spacing */
+    border-right: none;     /* Remove blinking bar if needed */
+    animation: none;        /* Disable typing effect if it breaks */
   }
 }
 /* =====================
